@@ -31,19 +31,16 @@ const badMusic = ['Nickelback', 'Creed', 'The Pussycat Dolls', 'Milli Vanilli', 
 const musicSelector = () => {
     let bandName = [];
     let albumName = [];
-    let randomBadBand = Math.floor(Math.random() * badMusic.length + 1);
+    let randomBadBand = Math.floor(Math.random() * badMusic.length);
     let goodOrBad = Math.floor(Math.random() * 2);
+    for (artist in goodMusic.bandOrArtist) {
+        bandName.push(artist);
+        console.log(bandName);
+    }
+    
     if (goodOrBad === 0) {
         console.log(`You should never listen to ${badMusic[randomBadBand]}`);
-    } else {
-        ;
-    }
-    let artistSize = 0;
-    for (artist in goodMusic) {
-        if(goodMusic.hasOwnProperty(artist)) {
-            size ++;
-        }
-    };
+    } 
     let randomArtist = [];
     let randomAlbum = [];
 }
