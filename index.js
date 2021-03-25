@@ -53,9 +53,9 @@ const musicSelector = () => {
       
     
     if (goodOrBad === 0) {
-        console.log(`You should never listen to ${badMusic[randomBadBand]}`); 
+        return (`You should never listen to ${badMusic[randomBadBand]}`); 
     } else {
-        console.log(`You should listen to ${bandName[randomGoodBand]} and the album ${goodMusic.bandOrArtist[bandName[randomGoodBand]].albums[randomAlbum]}`);
+        return (`You should listen to ${bandName[randomGoodBand]} and the album ${goodMusic.bandOrArtist[bandName[randomGoodBand]].albums[randomAlbum]}`);
     }; //This conditional gives us the recomendation, it's a little lengthy but it works.
 }
 
